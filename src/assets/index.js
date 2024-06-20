@@ -1,0 +1,11 @@
+export { default as dogecoin } from "./dogecoin.png";
+export { default as usdt } from "./usdt.png";
+export { default as usdc } from "./usdc.png";
+export { default as window } from "./window.png";
+export { default as eye } from "./eye.png";
+export { default as laika } from "./laika.png";
+export { default as rocket } from "./rocket.png";
+export { default as calculator } from "./calculator.png";
+export { default as question } from "./question-circle.png";
+export { default as arrowUp } from "./arrow-up.png";
+export { default as arrowDown } from "./arrow-down.png";
