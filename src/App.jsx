@@ -1,9 +1,10 @@
-import TablePage from "./pages/TablePage/TablePage"
+import TabsComponent from "./components/TabsComponent/TabsComponent"
+
 
 function App() {
   return (
     <>
-      <TablePage/>
+      <TabsComponent />
     </>
   )
 }

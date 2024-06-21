@@ -48,7 +48,7 @@ const TableComponent = () => {
   };
 
   return (
-    <div className="w-full sm:p-4">
+    <div className="w-full sm:px-4">
       <div className="rounded-md ">
         <Table >
           <TableBody>
@@ -57,50 +57,50 @@ const TableComponent = () => {
                 <Collapsible key={link.id} asChild>
                   <>
                     <TableRow className="bg-[#36373a] ">
-                      <TableCell className="font-medium text-lg rounded-s-[20px] "><div className='flex items-center gap-3'>
+                      <TableCell className="font-medium text-base lg:text-lg rounded-s-[20px] "><div className='flex items-center gap-3'>
                         <img src={link.image} alt="" className='w-10' />
                         <span>{link.swap_coin}</span></div>
                       </TableCell>
-                      <TableCell><h1 className='border inline p-2 rounded-[20px] tracking-wider'>{link.percent}</h1></TableCell>
+                      <TableCell><h1 className='border inline p-2 rounded-[20px] text-sm lg:text-base tracking-wider'>{link.percent}</h1></TableCell>
                       <TableCell><div className='flex flex-col gap-1'>
-                        <span className='text-lg'>Earned</span>
-                        <span className='text-gray-400 text-xl'>{link.earned}</span>
+                        <span className='text-base lg:text-lg'>Earned</span>
+                        <span className='text-gray-400 text-lg lg:text-xl'>{link.earned}</span>
                       </div></TableCell>
                       <TableCell >
                         <div className='flex flex-col gap-1'>
-                          <span className='text-lg '>APR</span>
+                          <span className='text-base lg:text-lg '>APR</span>
                           <div className='flex items-center gap-2'>
                             <img src={images.rocket} alt="" className='w-5' />
-                            <p className='text-[#27c05e] text-lg'>Up to {link.apr_orignal} <span className='line-through text-white ml-1'>{link.apr_cut}</span></p>
+                            <p className='text-[#27c05e] text-base lg:text-lg'>Up to {link.apr_orignal} <span className='line-through text-white ml-1'>{link.apr_cut}</span></p>
                             <button className=' flex-shrink-0'><img src={images.calculator} alt="" className='w-5' /></button>
                           </div>
                         </div>
                       </TableCell>
                       <TableCell>
                         <div className='flex flex-col gap-1'>
-                          <span className='text-lg '>Staked Liquidity</span>
+                          <span className='text-base lg:text-lg '>Staked Liquidity</span>
                           <div className='flex items-center gap-2'>
-                            <span className='text-lg ml-2 xl:ml-0 tracking-wider'>{link.staked_liquidity} $</span>
+                            <span className='text-base lg:text-lg ml-2 xl:ml-0 tracking-wider'>{link.staked_liquidity} $</span>
                             <button className='ml-2 flex-shrink-0'><img src={images.question} alt="" className='w-6' /></button>
                           </div>
                         </div>
                       </TableCell>
                       <TableCell>
                         <div className='flex flex-col gap-1'>
-                          <span className='text-lg '>Multiplier</span>
+                          <span className='text-base lg:text-lg '>Multiplier</span>
                           <div className='flex items-center gap-1'>
-                            <span className='text-lg tracking-wider'>{link.multiplier} $</span>
+                            <span className='text-base lg:text-lg tracking-wider'>{link.multiplier} $</span>
                             <button className='flex-shrink-0'><img src={images.question} alt="" className='w-6 ' /></button>
                           </div>
                         </div>
                       </TableCell>
                       <TableCell><div className='flex flex-col gap-1'>
-                        <span className='text-lg'>Available</span>
-                        <span className='text-gray-400 text-xl'>{link.available} LP</span>
+                        <span className='text-base lg:text-lg'>Available</span>
+                        <span className='text-gray-400 text-lg lg:text-xl'>{link.available} LP</span>
                       </div></TableCell>
                       <TableCell><div className='flex flex-col gap-1'>
-                        <span className='text-lg'>Staked</span>
-                        <span className='text-gray-400 text-xl'>{link.staked} LP</span>
+                        <span className='text-base lg:text-lg'>Staked</span>
+                        <span className='text-gray-400 text-lg lg:text-xl'>{link.staked} LP</span>
                       </div></TableCell>
                       <TableCell className="rounded-e-[20px]">
                         <CollapsibleTrigger asChild>
